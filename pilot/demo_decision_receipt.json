@@ -1,0 +1,26 @@
+{
+  "pilot": "ELYRIA SYSTEMS AI Dependency Boundary Assurance Pilot",
+  "company": "Northstar HealthPay",
+  "dependency_reviewed": "AI Claims-Routing Assistant",
+  "classification": "yellow_to_red_emerging_load_bearing_dependency",
+  "recommended_outcome": "narrow_and_escalate",
+  "authority_status": "partial_authority_documentation",
+  "retention_status": "persistent_memory_requires_mapping",
+  "jurisdiction_status": "vendor_processing_location_unresolved",
+  "consequence_status": "regulated_workflow_influence_possible",
+  "exit_status": "fallback_exists_but_migration_proof_incomplete",
+  "receipt_status": "receipt_generated_for_demo",
+  "replay_status": "replay_scenarios_required",
+  "conditions": [
+    "confirm executive or board authority",
+    "map retained memory and data categories",
+    "confirm jurisdictional processing and vendor control",
+    "restrict workflow API access until consequence review completes",
+    "test exit and fallback workflow",
+    "define revalidation triggers"
+  ],
+  "receipt_rule": "No receipt, no board assurance.",
+  "replay_rule": "No replay, no dependency confidence.",
+  "system_owner": "ELYRIA SYSTEMS",
+  "lead_architects": ["Samantha Revita", "Terry Snyder"]
+}

@@ -1,0 +1,20 @@
+{
+  "review_id": "",
+  "dependency_reviewed": "",
+  "vendor_provider": "",
+  "business_owner": "",
+  "authority_source": "",
+  "risk_class": "green_yellow_red",
+  "consequence_class": [],
+  "retention_class": "",
+  "jurisdictional_exposure": "",
+  "decision_outcome": "admit_narrow_escalate_refuse_halt_revalidate",
+  "reason_for_outcome": "",
+  "conditions_attached": [],
+  "review_date": "",
+  "next_revalidation_trigger": [],
+  "responsible_owner": "",
+  "receipt_rule": "No receipt, no board assurance.",
+  "replay_rule": "No replay, no dependency confidence.",
+  "proof_surface_rule": "No proof surface, no category claim."
+}

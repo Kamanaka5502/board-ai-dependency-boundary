@@ -1,10 +1,10 @@
 from runtime.decision_engine import DependencyReview, classify
 
 
-def test_green_dependency_admits():
+def test_bounded_internal_dependency_admits():
     review = DependencyReview(
         name="Internal Drafting Copilot",
-        criticality="important",
+        criticality="optional",
         consequence_classes=["internal"],
         persistent_memory=False,
         autonomous_execution=False,
@@ -21,7 +21,27 @@ def test_green_dependency_admits():
     assert decision["outcome"] == "admit"
 
 
-def test_red_dependency_escalates_or_halts():
+def test_important_internal_dependency_narrows():
+    review = DependencyReview(
+        name="Team Productivity Assistant",
+        criticality="important",
+        consequence_classes=["internal"],
+        persistent_memory=False,
+        autonomous_execution=False,
+        cross_border_exposure=False,
+        authority_clear=True,
+        receipt_available=True,
+        replay_available=True,
+        exit_path_available=True,
+        conditions_changed=False,
+        existing_deployment=False,
+    )
+    decision = classify(review)
+    assert decision["classification"] == "yellow"
+    assert decision["outcome"] == "narrow"
+
+
+def test_red_dependency_halts_when_existing_deployment():
     review = DependencyReview(
         name="AI Claims Routing Assistant",
         criticality="critical",

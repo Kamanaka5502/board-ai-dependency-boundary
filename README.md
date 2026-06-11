@@ -4,8 +4,7 @@
 
 ### by **ELYRIA SYSTEMS**
 
-![ELYRIA SYSTEMS Board AI Dependency Boundary](assets/elyria-systems-boundary.jpg)
-
+![ELYRIA SYSTEMS Board AI Dependency Boundary](3ea33f3a-6e90-4ae2-afcf-d99aa72fca0e.jpg)
 <br/>
 
 ![Status](https://img.shields.io/badge/status-operational-brightgreen?style=for-the-badge)

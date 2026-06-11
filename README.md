@@ -2,6 +2,8 @@
 
 # ⚡ Board AI Dependency Boundary ⚡
 
+### by **ELYRIA SYSTEMS**
+
 ![Board AI Dependency Boundary](13022230256265044685.jpg)
 
 <br/>
@@ -10,8 +12,10 @@
 ![Build](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
 ![Runtime](https://img.shields.io/badge/runtime-ready-blue?style=for-the-badge)
 ![Board Layer](https://img.shields.io/badge/board--layer-active-purple?style=for-the-badge)
+![Elyria Systems](https://img.shields.io/badge/ELYRIA-SYSTEMS-ff00ff?style=for-the-badge)
 ![Receipts](https://img.shields.io/badge/receipts-required-orange?style=for-the-badge)
 ![Replay](https://img.shields.io/badge/replay-required-red?style=for-the-badge)
+![License](https://img.shields.io/badge/license-proprietary-black?style=for-the-badge)
 
 ### **Board-facing assurance** for **AI dependencies** before they become **structural consequence**.
 
@@ -23,9 +27,21 @@
 
 ---
 
+## 🏛️ System Attribution
+
+**System:** **ELYRIA SYSTEMS**  
+**Lead Architect:** **Samantha Revita**  
+**Contributing Authorial Source:** **Terry Snyder**  
+**Repository:** **Board AI Dependency Boundary**  
+**Category:** **Board-facing AI dependency assurance / consequence-boundary review**
+
+This repository is part of the **ELYRIA SYSTEMS** governance and execution-boundary portfolio.
+
+---
+
 ## 🔥 What This Is
 
-The **Board AI Dependency Boundary** is a **high-consequence review layer** for identifying when **AI systems**, **vendors**, **memory**, **agents**, **tools**, **APIs**, or **retention structures** are becoming **load-bearing** inside an organization.
+The **Board AI Dependency Boundary** is a **high-consequence review layer** from **ELYRIA SYSTEMS** for identifying when **AI systems**, **vendors**, **memory**, **agents**, **tools**, **APIs**, or **retention structures** are becoming **load-bearing** inside an organization.
 
 It gives **boards** and **executives** a **decision surface** before **AI infrastructure** quietly becomes **structural**.
 
@@ -51,6 +67,24 @@ The common failure is not that an AI tool exists. The failure is that an AI depe
 That gap creates **board exposure**, **regulatory exposure**, **cyber exposure**, **vendor lock-in**, **audit failure**, **cross-border risk**, and **operational dependency without executive approval**.
 
 This project gives companies a way to identify the dependency before it becomes invisible infrastructure.
+
+---
+
+## 🧨 Enterprise Failure Modes Covered
+
+This review layer is designed to catch the failure modes that usually appear only after deployment pressure has already created reliance:
+
+- **Shadow AI adoption** without executive approval
+- **Persistent memory** that no one can fully inspect, export, sever, or delete
+- **Vendor-controlled model changes** that alter behavior after approval
+- **Agentic tool access** that can trigger workflow or system mutation
+- **Cross-border processing** without jurisdictional clarity
+- **Regulated workflow influence** without matching authority
+- **Audit gaps** where the decision cannot be reconstructed
+- **Exit failure** where the organization cannot revoke, migrate, or isolate the dependency
+- **Structural reliance** before board-level approval
+- **Receipt failure** where no formal proof exists that the boundary was reviewed
+- **Replay failure** where changed facts do not trigger changed decisions
 
 ---
 
@@ -92,6 +126,21 @@ This repo converts **AI dependency risk** into an **inspectable executive packet
 | ⏱️ **Revalidation Triggers** | Defines when review must reopen |
 | ⚙️ **Decision Engine** | Minimal operational runtime for **classification** |
 | 🌐 **Flask Prototype** | Starter interface for deployment |
+
+---
+
+## ✅ Coverage Matrix
+
+| Boundary | Covered |
+|---|---|
+| **Authority** | Who approved it, at what level, and whether authority matches consequence |
+| **Retention** | What is stored, where it lives, who controls it, and whether it can be deleted or severed |
+| **Jurisdiction** | Whether processing, memory, or vendor control crosses legal or sovereign boundaries |
+| **Reversibility** | Whether the organization can revoke, isolate, migrate, or override |
+| **Consequence** | What decisions, workflows, records, systems, customers, or regulated effects can be altered |
+| **Receipt** | Whether a formal review record proves the decision |
+| **Replay** | Whether the same facts reproduce the same outcome and changed facts trigger revalidation |
+| **Exit** | Whether the dependency can be removed without operational failure |
 
 ---
 
@@ -154,7 +203,7 @@ examples/
 
 ## ⚔️ Boundary Statement
 
-This is the **customer-facing** and **board-facing assurance layer**. It does **not** expose the **protected kernel** or full **consequence-boundary substrate**.
+This is the **customer-facing** and **board-facing assurance layer** of **ELYRIA SYSTEMS**. It does **not** expose the **protected kernel** or full **consequence-boundary substrate**.
 
 The customer receives **assurance**.  
 The board receives a **decision object**.  
@@ -168,10 +217,22 @@ The protected substrate remains **sealed**.
 
 ---
 
+## 🔒 License / Use Boundary
+
+This repository is released under a **proprietary Elyria Systems use boundary** unless a separate written license is granted.
+
+The materials may be reviewed for evaluation, discussion, and internal scoping. They may not be copied, resold, rebranded, relicensed, or used to build a competing commercial governance product without written permission from **ELYRIA SYSTEMS**.
+
+See [`LICENSE`](LICENSE).
+
+---
+
 <div align="center">
 
 ## ⚡ Admit. Narrow. Escalate. Refuse. Halt. Revalidate. ⚡
 
 **Before AI becomes infrastructure, prove what it can bind.**
+
+**ELYRIA SYSTEMS**
 
 </div>

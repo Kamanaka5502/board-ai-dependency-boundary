@@ -1,0 +1,38 @@
+classification:
+  green:
+    label: "Bounded Dependency"
+    conditions:
+      - "limited scope"
+      - "reversible"
+      - "non-structural"
+      - "no regulated consequence binding"
+      - "clear owner"
+      - "clear revocation"
+  yellow:
+    label: "Emerging Load-Bearing Dependency"
+    conditions:
+      - "operational reliance increasing"
+      - "retention exists"
+      - "workflow influence exists"
+      - "vendor lock-in risk exists"
+      - "authority partially documented"
+      - "consequence bounded but growing"
+  red:
+    label: "Load-Bearing Consequence Dependency"
+    conditions:
+      - "removal disrupts operations"
+      - "memory or inference dependency embedded"
+      - "regulated workflow affected"
+      - "cross-border or sovereign exposure exists"
+      - "autonomous or semi-autonomous execution exists"
+      - "authority unclear"
+      - "no receipt or replay"
+      - "no exit path"
+
+outcomes:
+  admit: "Dependency may proceed as proposed."
+  narrow: "Dependency may proceed only in reduced scope."
+  escalate: "Board, legal, compliance, cyber, or sovereign review required."
+  refuse: "Dependency may not proceed because the consequence boundary cannot be established."
+  halt: "Existing deployment must pause."
+  revalidate: "Prior approval is no longer sufficient because conditions changed."

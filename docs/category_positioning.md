@@ -60,4 +60,4 @@ This is **dependency-boundary assurance** before structural consequence binds.
 
 **System Owner:** ELYRIA SYSTEMS  
 **Lead Architect:** Samantha Revita  
-**Contributing Authorial Source:** Terry Snyder
+**Lead Architect:** Terry Snyder

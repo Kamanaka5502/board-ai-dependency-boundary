@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Elyria Systems Dependency Review Schema",
+  "type": "object",
+  "required": ["dependency_name", "owner", "deployment_stage", "criticality", "consequence_classes"],
+  "properties": {
+    "dependency_name": {"type": "string"},
+    "vendor_provider": {"type": "string"},
+    "owner": {"type": "string"},
+    "business_unit": {"type": "string"},
+    "deployment_stage": {"type": "string"},
+    "criticality": {"type": "string", "enum": ["optional", "important", "critical", "structural"]},
+    "consequence_classes": {"type": "array", "items": {"type": "string"}},
+    "persistent_memory": {"type": "boolean"},
+    "autonomous_execution": {"type": "boolean"},
+    "cross_border_exposure": {"type": "boolean"},
+    "authority_clear": {"type": "boolean"},
+    "receipt_available": {"type": "boolean"},
+    "replay_available": {"type": "boolean"},
+    "exit_path_available": {"type": "boolean"}
+  }
+}

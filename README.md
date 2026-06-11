@@ -1,5 +1,7 @@
 # Board AI Dependency Boundary
 
+![Board AI Dependency Boundary](13022230256265044685.jpg)
+
 Board-facing assurance layer for reviewing load-bearing AI dependencies before they become structural consequence.
 
 ## Purpose

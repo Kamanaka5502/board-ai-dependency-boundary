@@ -4,7 +4,7 @@
 
 ### by **ELYRIA SYSTEMS**
 
-![Board AI Dependency Boundary](13022230256265044685.jpg)
+![ELYRIA SYSTEMS Board AI Dependency Boundary](assets/elyria-systems-boundary.jpg)
 
 <br/>
 

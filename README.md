@@ -4,7 +4,16 @@
 
 ![Board AI Dependency Boundary](13022230256265044685.jpg)
 
-### Board-facing assurance for AI dependencies before they become structural consequence.
+<br/>
+
+![Status](https://img.shields.io/badge/status-operational-brightgreen?style=for-the-badge)
+![Build](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+![Runtime](https://img.shields.io/badge/runtime-ready-blue?style=for-the-badge)
+![Board Layer](https://img.shields.io/badge/board--layer-active-purple?style=for-the-badge)
+![Receipts](https://img.shields.io/badge/receipts-required-orange?style=for-the-badge)
+![Replay](https://img.shields.io/badge/replay-required-red?style=for-the-badge)
+
+### **Board-facing assurance** for **AI dependencies** before they become **structural consequence**.
 
 **No receipt, no board assurance.**  
 **No replay, no dependency confidence.**  
@@ -16,28 +25,28 @@
 
 ## 🔥 What This Is
 
-The **Board AI Dependency Boundary** is a high-consequence review layer for identifying when AI systems, vendors, memory, agents, tools, APIs, or retention structures are becoming **load-bearing** inside an organization.
+The **Board AI Dependency Boundary** is a **high-consequence review layer** for identifying when **AI systems**, **vendors**, **memory**, **agents**, **tools**, **APIs**, or **retention structures** are becoming **load-bearing** inside an organization.
 
-It gives boards and executives a decision surface before AI infrastructure quietly becomes structural.
+It gives **boards** and **executives** a **decision surface** before **AI infrastructure** quietly becomes **structural**.
 
-> Has an AI dependency become load-bearing before authority, retention, jurisdiction, reversibility, and consequence exposure were approved?
+> Has an **AI dependency** become **load-bearing** before **authority**, **retention**, **jurisdiction**, **reversibility**, and **consequence exposure** were approved?
 
 ---
 
 ## 🛡️ Core Function
 
-This repo converts AI dependency risk into an inspectable executive packet:
+This repo converts **AI dependency risk** into an **inspectable executive packet**:
 
 | Output | Purpose |
 |---|---|
-| ⚡ Board Memo | Executive summary of the dependency boundary |
-| 🧠 Dependency Boundary Grid | Memory, inference, runtime, tool, API, retention, jurisdiction, authority, consequence, exit, replay |
-| 🚦 Red / Yellow / Green Card | Board-readable classification |
-| 🧾 Decision Receipt | Formal proof of review and outcome |
-| 🔁 Replay Test Plan | Verifies whether the same facts produce the same decision |
-| ⏱️ Revalidation Triggers | Defines when review must reopen |
-| ⚙️ Decision Engine | Minimal operational runtime for classification |
-| 🌐 Flask Prototype | Starter interface for deployment |
+| ⚡ **Board Memo** | Executive summary of the **dependency boundary** |
+| 🧠 **Dependency Boundary Grid** | **Memory**, **inference**, **runtime**, **tool**, **API**, **retention**, **jurisdiction**, **authority**, **consequence**, **exit**, **replay** |
+| 🚦 **Red / Yellow / Green Card** | Board-readable **classification** |
+| 🧾 **Decision Receipt** | Formal proof of **review** and **outcome** |
+| 🔁 **Replay Test Plan** | Verifies whether the same facts produce the same **decision** |
+| ⏱️ **Revalidation Triggers** | Defines when review must reopen |
+| ⚙️ **Decision Engine** | Minimal operational runtime for **classification** |
+| 🌐 **Flask Prototype** | Starter interface for deployment |
 
 ---
 
@@ -46,29 +55,29 @@ This repo converts AI dependency risk into an inspectable executive packet:
 | Outcome | Meaning |
 |---|---|
 | ✅ **Admit** | Dependency may proceed as proposed |
-| 🟡 **Narrow** | Dependency may proceed only under reduced scope |
-| 🔺 **Escalate** | Board, legal, compliance, cyber, or sovereign review required |
-| ⛔ **Refuse** | Consequence boundary cannot be established |
+| 🟡 **Narrow** | Dependency may proceed only under **reduced scope** |
+| 🔺 **Escalate** | **Board**, **legal**, **compliance**, **cyber**, or **sovereign review** required |
+| ⛔ **Refuse** | **Consequence boundary** cannot be established |
 | 🛑 **Halt** | Existing deployment must pause |
-| 🔁 **Revalidate** | Prior approval is no longer sufficient because conditions changed |
+| 🔁 **Revalidate** | Prior approval is no longer sufficient because **conditions changed** |
 
 ---
 
 ## 🧬 Load-Bearing Rule
 
-A dependency becomes **load-bearing** when its removal, failure, alteration, retention behavior, or vendor-controlled change can materially affect:
+A dependency becomes **load-bearing** when its **removal**, **failure**, **alteration**, **retention behavior**, or **vendor-controlled change** can materially affect:
 
-- operations
-- authority
-- consequence
-- continuity
-- auditability
-- regulated exposure
-- jurisdictional control
-- reversibility
-- exit capacity
+- **operations**
+- **authority**
+- **consequence**
+- **continuity**
+- **auditability**
+- **regulated exposure**
+- **jurisdictional control**
+- **reversibility**
+- **exit capacity**
 
-If the dependency can bind consequence, it must be reviewed before it becomes structural.
+If the dependency can **bind consequence**, it must be reviewed before it becomes **structural**.
 
 ---
 
@@ -100,17 +109,17 @@ examples/
 
 ## ⚔️ Boundary Statement
 
-This is the customer-facing and board-facing assurance layer. It does **not** expose the protected kernel or full consequence-boundary substrate.
+This is the **customer-facing** and **board-facing assurance layer**. It does **not** expose the **protected kernel** or full **consequence-boundary substrate**.
 
-The customer receives assurance.  
-The board receives a decision object.  
-The protected substrate remains sealed.
+The customer receives **assurance**.  
+The board receives a **decision object**.  
+The protected substrate remains **sealed**.
 
 ---
 
 ## 🧾 Executive Promise
 
-> We do not ask leadership to trust that AI governance exists. We show whether a dependency has become structural, who authorized it, what it retains, what consequence it can bind, what boundary applies, and what receipt proves the decision.
+> We do not ask leadership to trust that **AI governance** exists. We show whether a dependency has become **structural**, who **authorized** it, what it **retains**, what **consequence** it can bind, what **boundary** applies, and what **receipt** proves the decision.
 
 ---
 

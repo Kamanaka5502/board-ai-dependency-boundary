@@ -1,0 +1,55 @@
+version: 1
+system_owner: ELYRIA SYSTEMS
+lead_architects:
+  - Samantha Revita
+  - Terry Snyder
+
+score_scale:
+  0: absent_or_unknown
+  1: weak_or_partial
+  2: documented
+  3: verified
+  4: tested_and_replayable
+
+dimensions:
+  authority:
+    weight: 1.3
+    question: Does approval authority match the consequence class?
+  retention:
+    weight: 1.3
+    question: Is memory/data retention mapped, controlled, exportable, deletable, auditable, and severable?
+  jurisdiction:
+    weight: 1.1
+    question: Is processing/storage/vendor control jurisdictionally resolved?
+  consequence:
+    weight: 1.5
+    question: What consequence can bind through this dependency?
+  reversibility:
+    weight: 1.2
+    question: Can the dependency be revoked, isolated, migrated, or overridden?
+  exit:
+    weight: 1.2
+    question: Can the organization continue if the dependency is removed?
+  receipt:
+    weight: 1.0
+    question: Does a formal decision receipt exist?
+  replay:
+    weight: 1.2
+    question: Can the same facts reproduce the same outcome and changed facts trigger revalidation?
+
+classification_thresholds:
+  green:
+    minimum_score: 3.1
+    required: [authority, consequence, reversibility]
+  yellow:
+    minimum_score: 2.0
+  red:
+    below_score: 2.0
+
+hard_red_triggers:
+  - high_consequence_without_authority
+  - persistent_memory_without_retention_control
+  - regulated_workflow_without_escalation
+  - no_exit_path_for_critical_dependency
+  - no_receipt_for_high_consequence_dependency
+  - no_replay_for_high_consequence_dependency

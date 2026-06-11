@@ -1,0 +1,17 @@
+{
+  "name": "AI Claims Routing Assistant",
+  "criticality": "critical",
+  "consequence_classes": ["regulated", "customer"],
+  "persistent_memory": true,
+  "autonomous_execution": true,
+  "cross_border_exposure": true,
+  "authority_clear": false,
+  "receipt_available": false,
+  "replay_available": false,
+  "exit_path_available": false,
+  "conditions_changed": false,
+  "existing_deployment": true,
+  "vendor_provider": "Example Vendor LLM",
+  "owner": "Operations and Technology",
+  "deployment_stage": "pilot_expanding_to_production"
+}

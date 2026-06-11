@@ -33,6 +33,51 @@ It gives **boards** and **executives** a **decision surface** before **AI infras
 
 ---
 
+## 🚨 The Problem This Solves
+
+Companies are adopting **AI tools**, **agentic systems**, **model providers**, **memory layers**, **workflow automations**, and **vendor platforms** faster than leadership can prove what those dependencies now control.
+
+The common failure is not that an AI tool exists. The failure is that an AI dependency becomes **structural** before the organization can answer:
+
+- **Who authorized it?**
+- **What does it retain?**
+- **Where does the data or memory live?**
+- **What decisions can it influence?**
+- **What consequence can it bind?**
+- **Can access be revoked immediately?**
+- **Can the dependency be removed without operational failure?**
+- **Can the decision be replayed and defended later?**
+
+That gap creates **board exposure**, **regulatory exposure**, **cyber exposure**, **vendor lock-in**, **audit failure**, **cross-border risk**, and **operational dependency without executive approval**.
+
+This project gives companies a way to identify the dependency before it becomes invisible infrastructure.
+
+---
+
+## ⚔️ Why Existing Approaches Do Not Compare
+
+Most AI governance tools stop at **policy**, **questionnaires**, **risk scoring**, **model cards**, **dashboards**, **compliance checklists**, or **post-deployment monitoring**.
+
+Those are useful, but they usually do not answer the board-level dependency question:
+
+> Can this AI dependency now bind consequence, retain memory, alter workflow, or create structural reliance without approved authority and a provable exit path?
+
+| Common Approach | What It Usually Covers | What It Misses |
+|---|---|---|
+| **AI policy templates** | Rules and acceptable-use language | Whether the dependency has become **load-bearing** |
+| **Risk questionnaires** | Intake answers and vendor attestations | Whether consequence can **bind** through the dependency |
+| **Model cards** | Model behavior and limitations | Runtime authority, retention, exit, and board exposure |
+| **Dashboards** | Visibility and monitoring | Whether invalid movement is refused before consequence |
+| **Compliance checklists** | Regulatory mapping | Whether authority matches the consequence class |
+| **Vendor reviews** | Procurement and security posture | Whether removal would break operations or auditability |
+| **Post-deployment monitoring** | What happened after launch | Whether the boundary held before structural reliance formed |
+
+This layer is different because it reviews the **dependency boundary**, not just the **tool**.
+
+It asks whether the organization has proof over **authority**, **retention**, **jurisdiction**, **reversibility**, **receipt**, **replay**, and **consequence exposure** before the dependency becomes structurally embedded.
+
+---
+
 ## 🛡️ Core Function
 
 This repo converts **AI dependency risk** into an **inspectable executive packet**:

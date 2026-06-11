@@ -31,7 +31,7 @@
 
 **System:** **ELYRIA SYSTEMS**  
 **Lead Architect:** **Samantha Revita**  
-**Contributing Authorial Source:** **Terry Snyder**  
+**Lead Architect:** **Terry Snyder**  
 **Repository:** **Board AI Dependency Boundary**  
 **Category:** **Board-facing AI dependency assurance / consequence-boundary review**
 

@@ -42,6 +42,22 @@ This repository is part of the **ELYRIA SYSTEMS** governance and execution-bound
 
 ---
 
+## 🚀 Deployable Sandbox
+
+This repo now includes a bounded deployable sandbox for customer review and pilot demonstration.
+
+| Deployment Path | Command |
+|---|---|
+| **Local Python** | `python app/sandbox_app.py` |
+| **Docker** | `docker build -t elyria-board-ai-boundary-sandbox .` |
+| **Docker Compose** | `docker compose up --build` |
+
+See [`DEPLOYMENT.md`](DEPLOYMENT.md) for the full deployment guide.
+
+The deployment surface is intentionally limited. It exposes intake, classification, receipt, replay, and revalidation behavior only. It does not expose the protected Elyria Systems substrate, kernel internals, private research corpus, unpublished math, or production enforcement architecture.
+
+---
+
 ## 🔥 What This Is
 
 The **Board AI Dependency Boundary** is a **high-consequence review layer** from **ELYRIA SYSTEMS** for identifying when **AI systems**, **vendors**, **memory**, **agents**, **tools**, **APIs**, or **retention structures** are becoming **load-bearing** inside an organization.
@@ -186,19 +202,21 @@ docs/
   commercial_offer_sheet.md
   replay_test_plan.md
 
-templates/
-  intake_form.md
-  dependency_boundary_grid.md
-  receipt_template.json
+DEPLOYMENT.md
+Dockerfile
+docker-compose.yml
 
 runtime/
   decision_engine.py
-  rules.yaml
+  scoring_engine.py
+  receipt_generator.py
 
 app/
+  sandbox_app.py
   flask_app.py
 
 examples/
+  customer_sandbox_payload.json
   sample_review.md
 ```
 

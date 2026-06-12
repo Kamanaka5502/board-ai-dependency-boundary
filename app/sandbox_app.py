@@ -4,6 +4,7 @@ from flask import Flask, jsonify, request
 
 from runtime.decision_engine import DependencyReview, classify
 from runtime.receipt_generator import generate_receipt
+from runtime.replay_engine import replay, replay_delta
 
 app = Flask(__name__)
 
@@ -15,9 +16,16 @@ def home():
         "product": "Board AI Dependency Boundary Review",
         "sandbox": "customer_playground",
         "status": "operational",
-        "message": "Submit a dependency review to /sandbox/review.",
+        "deployment_boundary": "sandbox_only_not_production_enforcement",
+        "message": "Submit a dependency review to /sandbox/review. Replay proof is available at /sandbox/replay and /sandbox/replay-delta.",
+        "endpoints": {
+            "review": "POST /sandbox/review",
+            "replay": "POST /sandbox/replay",
+            "replay_delta": "POST /sandbox/replay-delta"
+        },
         "example_payload": {
             "name": "AI Claims Routing Assistant",
+            "dependency_name": "AI Claims Routing Assistant",
             "criticality": "critical",
             "consequence_classes": ["regulated", "customer"],
             "persistent_memory": True,
@@ -36,15 +44,14 @@ def home():
 @app.post("/sandbox/review")
 def sandbox_review():
     payload = request.get_json(force=True)
-    review = DependencyReview(**payload)
-    decision = classify(review)
+    review = DependencyReview(**{k: v for k, v in payload.items() if k in DependencyReview.__dataclass_fields__})
+    decision = classify(review).result()
     receipt = generate_receipt({
-        "dependency_name": payload.get("name"),
+        **payload,
+        "dependency_name": payload.get("dependency_name", payload.get("name")),
         "vendor_provider": payload.get("vendor_provider", "sandbox_vendor"),
         "owner": payload.get("owner", "sandbox_owner"),
         "deployment_stage": payload.get("deployment_stage", "sandbox"),
-        "criticality": payload.get("criticality"),
-        "consequence_classes": payload.get("consequence_classes", []),
     }, decision)
     return jsonify({
         "decision": decision,
@@ -57,5 +64,17 @@ def sandbox_review():
     })
 
 
+@app.post("/sandbox/replay")
+def sandbox_replay():
+    payload = request.get_json(force=True)
+    return jsonify(replay(payload))
+
+
+@app.post("/sandbox/replay-delta")
+def sandbox_replay_delta():
+    payload = request.get_json(force=True)
+    return jsonify(replay_delta(payload["before"], payload["after"]))
+
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=False)

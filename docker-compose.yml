@@ -1,0 +1,10 @@
+services:
+  elyria-board-ai-boundary-sandbox:
+    build: .
+    container_name: elyria-board-ai-boundary-sandbox
+    ports:
+      - "5000:5000"
+    environment:
+      - PYTHONPATH=/app
+      - FLASK_ENV=production
+    restart: unless-stopped

@@ -24,7 +24,7 @@ def _review_payload(**overrides):
 
 def _decision_from_payload(payload):
     review = DependencyReview(**{k: v for k, v in payload.items() if k in DependencyReview.__dataclass_fields__})
-    return classify(review).result()
+    return classify(review)
 
 
 def _normalized_receipt(receipt):
